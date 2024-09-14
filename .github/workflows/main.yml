@@ -1,7 +1,8 @@
 name: Deploy Docker image to AWS EC2
 
 on:
-  workflow_dispatch: # Allows you to trigger the workflow manually from GitHub UI
+  push:
+    branches: ['master']
 
 jobs:
   deploy:
