@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Pull Docker image from Docker Hub
-        run: docker pull Muruganjr/python-app:latest
+        run: docker pull muruganjr/python-app:master
 
       - name: Set up SSH key
         run: echo "${{ secrets.EC2_SSH_KEY }}" > /tmp/id_rsa
