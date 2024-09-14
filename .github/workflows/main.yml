@@ -33,6 +33,6 @@ jobs:
         run: |
           chmod 600 /tmp/id_rsa
           ssh -o StrictHostKeyChecking=no -i /tmp/id_rsa $EC2_USER@$EC2_HOST << 'EOF'
-            docker pull Muruganjr/python-app:latest
-            docker run -d -p 80:80 Muruganjr/python-app:latest
+            docker pull muruganjr/python-app:master
+            docker run -d -p 80:80 muruganjr/python-app:master
           EOF
