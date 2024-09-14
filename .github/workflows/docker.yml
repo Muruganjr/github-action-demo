@@ -4,7 +4,7 @@ name: Python Docker CI/CD
 on:
   push:
     branches:
-      - main
+      - master
 
 # Define the jobs that will run in the workflow
 jobs:
